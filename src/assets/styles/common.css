@@ -1,0 +1,78 @@
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply m-0 mb-[0.6em] self-center leading-[1];
+  }
+  textarea {
+    @apply resize-none rounded-lg border-0 shadow;
+  }
+  textarea:focus {
+    @apply border-none outline-none;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .modal-overlay {
+    @apply flex-center bg-modal-overlay invisible fixed top-0 left-0 z-[1000] h-full w-full opacity-0 transition-all duration-300 ease-in-out;
+  }
+
+  .modal-overlay.open {
+    @apply visible opacity-100;
+  }
+
+  .modal {
+    @apply w-4/5 max-w-[400px] scale-95 rounded-xl bg-white opacity-0 shadow transition-all duration-300 ease-in-out;
+  }
+
+  .modal.open {
+    @apply scale-100 opacity-100;
+  }
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: text;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+*:focus {
+  outline: none;
+}

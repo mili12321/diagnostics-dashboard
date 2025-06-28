@@ -1,0 +1,16 @@
+version: '3'
+services:
+  frontend:
+    build: .
+    ports:
+      - '3000:3000'
+    depends_on:
+      - api
+
+  api:
+    image: clue/json-server
+    volumes:
+      - ./data:/data
+    command: -w /data/db.json
+    ports:
+      - '3500:80'

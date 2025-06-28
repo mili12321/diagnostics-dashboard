@@ -1,0 +1,15 @@
+@theme {
+  --color-text-primary: #01152b;
+  --color-text-secondary: #55687d;
+  --shadow-shadow: 0 2px 8px 0 rgba(2, 29, 61, 0.12);
+  --font-montserrat: 'Montserrat';
+  --color-sidebar-bg: #2f2f66;
+  --color-variant-500: #12ffe2;
+  --color-primary-500: #7071f3;
+  --color-neutral-50: #e6e8ec;
+  --color-critical: #e63462;
+  --color-alarm: #ff891b;
+  --color-healthy: #0ead69;
+  --color-modal-overlay: rgba(1, 21, 43, 0.8);
+  --color-border: #b1b9c3;
+}
