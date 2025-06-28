@@ -509,6 +509,24 @@
       "type": "bearing",
       "severity": "healthy",
       "id": 85
+    },
+    {
+      "created_at": "2025-07-18T04:06:42.087Z",
+      "type": "gear",
+      "severity": "healthy",
+      "id": 86
+    },
+    {
+      "created_at": "2025-07-18T04:06:01.505Z",
+      "type": "motor",
+      "severity": "critical",
+      "id": 87
+    },
+    {
+      "created_at": "2025-07-19T04:07:26.993Z",
+      "type": "gear",
+      "severity": "healthy",
+      "id": 88
     }
   ]
 }

@@ -1,5 +1,7 @@
 ## 📊 Project Overview
 
+[Watch Demo](./demo/demo-video.mp4)
+
 This project is a responsive React dashboard that allows users to view, analyze, and manage diagnostic entries.
 
 It includes:
@@ -20,16 +22,7 @@ Users can select a custom start date to view a 14-day window beginning from that
 
 A form to add new diagnostic entries in real-time. The table and graph update immediately after submission.
 
-## 🔍 Performance Considerations
-
-- The diagnostics list is sorted using simple .sort() calls on each update — suitable for small to medium datasets.
-
-- If working with large datasets or high-frequency real-time inserts, I would:
-  - Use a balanced binary search tree (e.g., bintrees) for O(log n) inserts.
-
-  - Virtualize the list (e.g., react-window) for efficient rendering.
-
-## 🧠 Form State & Validation
+## 🧪 Form State & Validation
 
 For managing the form state and validation logic, I chose to use **react-hook-form** together with **zod**.
 
@@ -52,7 +45,7 @@ Why I chose react-hook-form instead of building form logic from scratch:
 
 ## 🔍 Performance Considerations
 
-This demo uses simple array sorting (`.sort()` on each update), which is sufficient for small or medium datasets.
+This project uses simple array sorting (`.sort()` on each update), which is sufficient for small or medium datasets.
 
 If scaling to a much larger dataset or handling high-frequency inserts in real time, I would:
 
